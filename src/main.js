@@ -16,6 +16,10 @@ let keyF, keyR, keyA, keyS, keyD, keyLEFT, keyRIGHT;
 
 
 /*
+PROJECT TITLE: CATFIGHT (ROCKET PATROL MOD)
+CREATOR NAME: Patrick Gomez
+TIME SPENT WORKING: ~8 hours
+
 POINTS BREAKDOWN:
 Redesign the game's artwork, UI, and sound to change its theme/aesthetic (to something other than sci-fi) (60)
 Implement a simultaneous two-player mode (30)
