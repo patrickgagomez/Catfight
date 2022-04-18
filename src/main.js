@@ -13,3 +13,14 @@ let borderPadding = borderUISize / 3;
 
 // reserve keyboard variables
 let keyF, keyR, keyA, keyS, keyD, keyLEFT, keyRIGHT;
+
+
+/*
+POINTS BREAKDOWN:
+Redesign the game's artwork, UI, and sound to change its theme/aesthetic (to something other than sci-fi) (60)
+Implement a simultaneous two-player mode (30)
+Create a new animated sprite for the Spaceship enemies (10)
+Create a new title screen (e.g., new artwork, typography, layout) (10)
+
+TOTAL POINTS: 110
+*/
