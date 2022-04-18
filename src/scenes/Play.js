@@ -57,8 +57,8 @@ class Play extends Phaser.Scene {
         //this.add.rectangle(game.config.width - borderUISize, 0, borderUISize, game.config.height, 0x0d4f43).setOrigin(0 ,0);
 
         // add Rocket (p1)
-        this.p1Rocket = new Rocket(this, game.config.width/2-40, game.config.height - borderUISize - borderPadding, 'water', keyLEFT, keyRIGHT, keyF, 'water').setOrigin(0.5, 0);
-        this.p2Rocket = new Rocket(this, game.config.width/2-40, game.config.height - borderUISize - borderPadding, 'water', keyA, keyS, keyD, 'water').setOrigin(0.5, 0);
+        this.p1Rocket = new Rocket(this, game.config.width/2-100, game.config.height - borderUISize - borderPadding, 'water', keyLEFT, keyRIGHT, keyF, 'water').setOrigin(0.5, 0);
+        this.p2Rocket = new Rocket(this, game.config.width/2+100, game.config.height - borderUISize - borderPadding, 'water', keyA, keyS, keyD, 'water').setOrigin(0.5, 0);
 
 
         this.test= this.add.sprite(this.p1Rocket.x-40, this.p1Rocket.y, 'watergun');
@@ -82,8 +82,8 @@ class Play extends Phaser.Scene {
         let scoreConfig = {
             fontFamily: 'Courier New',
             fontSize: '28px',
-            backgroundColor: '#743280',
-            color: '#ff0059',
+            backgroundColor: '#168c3c',
+            color: '#27b5c2',
             align: 'right',
             padding: {
                 top: 5,
@@ -193,6 +193,6 @@ class Play extends Phaser.Scene {
         this.p1Score += ship.points;
         this.scoreLeft.text = this.p1Score; 
         
-        this.sound.play('sfx_explosion');
+        this.sound.play('sfx_explosion', {volume: 0.1});
     }
 }
