@@ -5,6 +5,7 @@ class Spaceship extends Phaser.GameObjects.Sprite {
         scene.add.existing(this);   // add to existing scene
         this.points = pointValue;   // store pointValue
         this.moveSpeed = game.settings.spaceshipSpeed;         // pixels per frame
+        this.isShot = false;
         this.anims.play(animation, true);
         this.on('animationcomplete', () => {    // callback after anim completes
             this.anims.play(animation, true);                       // remove explosion sprite
@@ -15,6 +16,9 @@ class Spaceship extends Phaser.GameObjects.Sprite {
     update() {
         // move spaceship left
         this.x += this.moveSpeed;
+        if (this.isShot == true){
+            this.x -= 2;
+        }
         // wrap around from left edge to right edge
         //if(this.x <= 0 - this.width) {
         if(this.x >= game.config.width + this.width) {
